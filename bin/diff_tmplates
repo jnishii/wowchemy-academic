@@ -1,0 +1,23 @@
+#!/bin/bash
+
+PRV=layouts
+THM=themes/academic
+
+echo "==============================================================="
+echo "diff -r ${THM}/layouts ${PRV}"
+diff -r ${THM}/layouts ${PRV}
+
+echo "==============================================================="
+for f in `find ${PRV}`; do
+	if [ -f $f ]; then
+		if [ -f ${THM}/$f ]; then
+			echo "diff ${THM}/${f} ${f}"
+			diff ${THM}/${f} ${f}
+		else
+			echo "$f: only in layouts/"
+		fi
+	fi
+	echo "==============================================================="
+done
+
+exit

@@ -1,0 +1,82 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+
+[[main]]
+  name = "おしらせ"
+  url = "post/"
+  weight = 1
+
+[[main]]
+  name = "研究"
+  url = "#projects"
+  weight = 10
+
+
+[[main]]
+  name = "自己紹介"
+  url = "#about"
+  weight = 20
+
+
+### Submenu of `classes`
+### 各講義用ファイルのヘッダで指定したいが，widgetページのためかうまくいかない
+[[main]]
+  name = "講義"
+  identifier = "classes"
+  url = "classes"
+  weight = 30
+
+[[main]]
+  parent ="classes"
+  name = "物理と情報のための基礎数学II"
+  url = "classes/#math"
+
+[[main]]
+  parent ="classes"
+  name = "ロジカルシンキング"
+  url = "classes/#lt"
+
+[[main]]
+  parent ="classes"
+  name = "計算モデル論II"
+  url = "classes/#cm"
+
+[[main]]
+  parent ="classes"
+  name = "計算モデル論演習II"
+  url = "classes/#gym"
+
+[[main]]
+  parent ="classes"
+  name = "自然情報科学"
+  url = "classes/#dynamicalsystem"
+
+#######
+[[main]]
+  name = "資料"
+  identifier = "misc"
+  url = "misc"
+  weight = 40
+
+### submenu of materials are specified in the header of each page!
+
+[[main]]
+  name = "メモ"
+  url = "http://bcl.sci.yamaguchi-u.ac.jp/~jun/notebook"
+  weight = 50
+
+[[main]]
+  name = "研究室"
+  url = "http://bcl.sci.yamaguchi-u.ac.jp/"
+  weight = 60
+
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/media/resume.pdf` and uncomment the lines below.
+# [[main]]
+#    name = "CV"
+#    url = "media/resume.pdf"
+#    weight = 70
