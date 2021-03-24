@@ -1,8 +1,12 @@
 ---
 title: 物理シミュレーション・チーム
 summary: ロボットシミュレーションによる多足歩行等の構成論的研究
+categories:
+- research
 tags:
 - legged robot
+- locomotion
+- simulation
 image:
   caption: 多足歩行ロボットシミュレーション
   focal_point: Smart

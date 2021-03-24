@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
-title: Recent Posts
+title: news
 subtitle:
 
 content:
@@ -32,6 +32,9 @@ content:
   order: desc
 
 design:
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns : "2"
+
   # Choose a view for the listings:
   #   1 = List
   #   2 = Compact

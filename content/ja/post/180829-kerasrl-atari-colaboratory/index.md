@@ -4,7 +4,7 @@ date: 2018-08-29
 categories: ["comp"]
 image:
   preview_only: true
-tags: ["python","openAI Gym","colaboratory"]
+tags: ["python","openAI Gym","colaboratory","deep learning"]
 ---
 
 

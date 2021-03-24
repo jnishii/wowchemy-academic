@@ -1,0 +1,33 @@
+.tag-cloud a {
+  margin: 1px 10px;
+}
+
+.category-cloud a {
+  display: inline-block;
+  position: relative;
+  margin: 1px 10px;
+  word-wrap: break-word;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+
+  padding: 0em 1em 0em 1em;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: darken($sta-primary-light,20%);
+/*  background: $sta-primary-light;
+  color: #FFF;*/
+}
+
+.category-cloud a:active,
+.categoyr-cloud a:focus,
+.category-cloud a:hover {
+  color: $sta-primary-light;
+  transform: scale(1.2);
+}
+
+.dark .cateogry-cloud a:active,
+.dark .category-cloud a:focus,
+.dark .category-cloud a:hover {
+  color: $sta-primary-dark;
+}

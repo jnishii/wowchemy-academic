@@ -2,7 +2,7 @@
 title: "人工知能学会全国大会@新潟"
 date: 2019-06-14
 categories: ["research"]
-tags: ["misc"]
+tags: ["misc","deep learning"]
 image:
   preview_only: false
 ---

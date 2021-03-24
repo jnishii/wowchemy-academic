@@ -3,7 +3,7 @@ title: "【人工知能はいま　専門家に学ぶ】（６）日本を代表
 date: 2016-06-08
 publish_date: 2016-06-08
 categories: ["research"]
-tags: ["neural networks"]
+tags: ["neural network"]
 ---
 
 甘利先生の次は[合原先生のインタビュー記事](http://www.sankeibiz.jp/aireport/news/160605/aia1606050700001-n1.htm)だった。

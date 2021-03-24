@@ -1,6 +1,8 @@
 ---
 title: "音楽・表現技術チーム"
 summary: "音楽などによる感情表現を理論的に考える"
+categories:
+- research
 tags:
 - music
 image:

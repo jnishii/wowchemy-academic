@@ -1,5 +1,5 @@
 ---
-title: "Python Tips"
+title: "Pandasで漸化式"
 date: 2020-12-30
 categories: ["comp"]
 tags: ["python"]

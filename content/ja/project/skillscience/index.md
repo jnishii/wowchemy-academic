@@ -1,6 +1,8 @@
 ---
 title: 運動計測チーム
 summary: データサイエンスで運動のコツを明らかにする
+categories:
+- research
 tags:
 - biomechanics
 image:

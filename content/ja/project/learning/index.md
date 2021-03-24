@@ -2,7 +2,8 @@
 title: 学習モデル・チーム
 summary: 神経回路網モデル
 tags:
-- Neural Network
+- neural network
+- deep learning
 image:
   caption: コツを発見・学習する神経回路網モデル
   focal_point: Smart

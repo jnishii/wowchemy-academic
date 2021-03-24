@@ -1,8 +1,10 @@
 ---
 title: 神経科学チーム
 summary: 脳の神経活動を解析する
+categories:
+- research
 tags:
-- Neural Network
+- neural network
 - motor control
 image:
   caption: "Hippocampal-pyramidal-cell by David Beeman"

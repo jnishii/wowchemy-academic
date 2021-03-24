@@ -4,7 +4,7 @@ date: 2018-08-28
 image:
   preview_only: true
 categories: ["comp"]
-tags: ["python","openAI Gym","colaboratory"]
+tags: ["python","openAI Gym","colaboratory","deep learning"]
 ---
 
 {{< video src="cartpole-kerasrl-216.mp4" width="300">}}
