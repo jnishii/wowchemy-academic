@@ -2,7 +2,7 @@
 title: "gravのgitsync対応"
 date: 2017-11-14
 categories: ["comp"]
-tags: ["cms","grav"]
+tags: ["CMS","grav"]
 ---
 
 これまでDropbox管理だった[Grav](http://www.grav.org)を[GitHub](http://github.com)対応にして[git-syncのプラグイン](https://github.com/trilbymedia/grav-plugin-git-sync)を使おうとしたらはまった。

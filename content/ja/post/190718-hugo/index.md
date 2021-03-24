@@ -2,7 +2,7 @@
 title: "from Grav to Hugo"
 date: 2019-07-18
 categories: ["comp"]
-tags: ["grav","hugo","cms"]
+tags: ["grav","hugo","CMS"]
 ---
 
 このホームページのCMSには[Grav](https://getgrav.org/)を使っていたが，[Hugo](https://gohugo.io/)に変えた。

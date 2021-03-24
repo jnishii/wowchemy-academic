@@ -2,7 +2,7 @@
 title: "Gravの覚書"
 date: 2015-08-31
 categories: ["comp"]
-tags: ["grav"," cms"]
+tags: ["grav","CMS"]
 ---
 
 夏バテなのか研究室のWebサーバのハードディスクが壊れてしまった。

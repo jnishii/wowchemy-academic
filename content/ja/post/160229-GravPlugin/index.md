@@ -2,7 +2,7 @@
 title: "文字色を変えるGravのプラグイン"
 date: 2016-02-29
 categories: ["comp"]
-tags: ["grav"," cms"]
+tags: ["grav","CMS"]
 ---
 
 このホームページ作成に使っている[Grav](http://getgrav.org)はMarkdown記法。

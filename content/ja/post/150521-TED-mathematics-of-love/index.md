@@ -2,7 +2,7 @@
 title: "(TED) The mathematics of love"
 date: 2015-05-21
 categories: ["research"]
-tags: ["ted"]
+tags: ["TED"]
 ---
 
 <!--[plugin:embed](https://www.ted.com/talks/hannah_fry_the_mathematics_of_love)-->

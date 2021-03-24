@@ -2,7 +2,7 @@
 title: "from hugo-academic to wowchemy"
 date: 2021-03-24
 categories: ["comp"]
-tags: ["hugo","cms"]
+tags: ["hugo","CMS"]
 ---
 
 このホームページの生成には静的サイトジェネレータ[Hugo](https://gohugo.io/)上のテーマ"hugo-academic"を使っていたが，そのバージョンを上げたら仕様がいろいろ変わってしまい，htmlも生成できなくなって少しの間困っていた。

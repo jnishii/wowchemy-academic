@@ -2,7 +2,7 @@
 title: "Gravのインストール"
 date: 2015-01-10
 categories: ["comp"]
-tags: ["grav"," cms"]
+tags: ["grav","CMS"]
 ---
 
 サイト構築にしばらくPukiwikiを使っていたが，なんとなく他のCMSを使ってみたくなったので[grav](http://getgrav.org/)を試すことにした．
