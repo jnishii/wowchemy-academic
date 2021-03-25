@@ -5,7 +5,7 @@ categories: ["comp"]
 tags: ["python"]
 ---
 
-PythonのPandasで漸化式の計算を作ろうとしたら，いろいろはまって勉強になったので，メモ。
+PythonのPandasで漸化式の計算をしようとしたら，いろいろはまって勉強になったので，メモ。
 
 <!--more-->
 
