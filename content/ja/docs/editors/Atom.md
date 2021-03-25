@@ -1,6 +1,6 @@
 ---
 title: Atom
-linktitle: true
+linktitle: Atom
 type: book
 weight: 10
 ---

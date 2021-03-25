@@ -1,7 +1,7 @@
 ---
 title: ご案内
 type: book
-toc: false
+toc: true
 ---
 
 雑多な覚書きのページです。
