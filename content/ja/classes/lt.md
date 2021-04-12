@@ -19,4 +19,4 @@ weight: 30
 
 e-learningのコーナーに毎週の宿題や様々な情報を掲載しています。以下からログインしてください。
 
-- [ロジカルシンキングIIのe-learning](https://mdcs4s.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=50910&noprocess)
+- [ロジカルシンキングのe-learning](https://mdcs4s.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=50910&noprocess)
