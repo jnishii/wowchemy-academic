@@ -14,12 +14,6 @@ subtitle = ""
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
-#[[feature]]
-#  icon = "rocket"
-#  icon_pack = "fas"
-#  name = "物理学"
-#  link = "#physics"
-#  description = "90%"
   
 [[feature]]
   icon = "chart-line"
@@ -29,9 +23,16 @@ subtitle = ""
 #  description = "100%"  
   
 [[feature]]
+  icon = "users"
+  icon_pack = "fas"
+  name = "基礎セミナー"
+  link = "#bs"
+#  description = "90%"
+
+[[feature]]
   icon = "lightbulb"
   icon_pack = "fas"
-  name = "ロジカルシンキングII"
+  name = "ロジカルシンキング"
   link = "#lt"
 #  description = "10%"
 

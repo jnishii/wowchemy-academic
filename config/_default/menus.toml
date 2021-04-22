@@ -36,6 +36,11 @@
 
 [[main]]
   parent ="classes"
+  name = "基礎セミナー"
+  url = "classes/#bs"
+
+[[main]]
+  parent ="classes"
   name = "ロジカルシンキング"
   url = "classes/#lt"
 
