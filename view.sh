@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
+HUGO=${HOME}/bin/hugo
+echo "using $HUGO"
 
-hugo server --disableFastRender --i18n-warnings
+${HUGO} server --disableFastRender --i18n-warnings $1

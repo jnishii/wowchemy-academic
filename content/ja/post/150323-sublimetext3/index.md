@@ -1,17 +1,20 @@
 ---
-title: "SublimeText 3をインストールしてみた"
+title: "SublimeText 3"
+summary: "SublimeText 3をインストールしてみた"
 date: 2015-03-23
 categories: ["comp"]
 tags: ["sublime text 3"]
 ---
 
-[Atom](http://atom.io/)が重くて残念なことが多いのでSublime Text 3をインストールしてみた。
-まだベータ版なので homebrew でインストールするには以下のようにtapが必要。
-
-	$ brew tap caskroom/homebrew-versions
-	$ brew cask install sublime-text3
+エディタAtomが重くて残念なことが多いのでSublime Text 3をインストールしてみた。
 
 <!--more-->
+
+```
+brew cask install sublimetext
+
+```
+
 
 ## Sublime Textを使うための設定
 
@@ -25,27 +28,25 @@ tags: ["sublime text 3"]
 1. `Cmd`-`Shift`-`P`で Command Pallet を開く
 2. Command Palletで`install package`
 3. `japanize`を選択
-4. 以下を実行
-	
-	```
-	$ cp ~/Library/Application Support/Sublime Text 3/Packages/Japanize/*jp ~/Library/Application Support/Sublime Text 3/Packages/Default/
-	```
+4. `$ cp ~/Library/Application Support/Sublime Text 3/Packages/Japanize/*jp ~/Library/Application Support/Sublime Text 3/Packages/Default/``
+
 
 ### Markdownを使うためのパッケージをインストール
 
 - Monokai Extended
-	+ markdown の syntax highlight
-	+ `Preferences/Color Scheme`で色選択
+	- markdown の syntax highlight
+	- `Preferences/Color Scheme`で色選択
 - Markdown Extended
-	+ markdown内のコードのsyntax highlight
-	+ `表示/Syntax/Open all with current extension as .../Markdown Extended`を選択
+	- markdown内のコードのsyntax highlight
+	- `表示/Syntax/Open all with current extension as .../Markdown Extended`を選択
 - OmniMarkupPreviewer
-	+ L ive Preview   が可能
-	+ `⌘`+`⌥`+`O`: Preview Markup in Browser.
-	+ `⌘`+`⌥`+`X`: Export Markup as HTML.
-	+ `Ctrl`+`Alt`+`C`: Copy Markup as HTML.
+	- Live Preview   が可能
+	- `⌘`+`⌥`+`O`: Preview Markup in Browser.
+	- `⌘`+`⌥`+`X`: Export Markup as HTML.
+	- `Ctrl`+`Alt`+`C`: Copy Markup as HTML.
 
 ### ここまでの参考URL
+
 - [Sublime Text で Markdown を快適にする3つのパッケージ](http://webmem.hatenablog.com/entry/sublime-text-markdown)
 - [[Mac] Sublime text 3 インストール はじめにやること - 初期設定 - (Setup 1of5)](http://wp.re13b.jp/entry/sublime/setup/install)
 
@@ -63,7 +64,7 @@ tags: ["sublime text 3"]
 3. (初めての時のみ) `Ctl-s` (保存)して，一回終了して，もう一度2を実行
 4. 以下(95-101行目?)をコメントにする
 
-	````
+```
 	{ "keys": ["tab"], "command": "insert_best_completion", "args": {"default": "\t", "exact": true} },
 	{ "keys": ["tab"], "command": "insert_best_completion", "args": {"default": "\t", "exact": false},
 		"context":
@@ -71,7 +72,7 @@ tags: ["sublime text 3"]
 			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 		]
 	},
-	````
+```
 
 
 参考URL: [Sublime Text 3 で日本語入力中に Tab キーで入力・変換候補を選択できるようにする](http://beadored.com/sublime-text-3-suggest-tab/)

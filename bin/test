@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE=${HOME}/Sites/hugo-academic
+SOURCE=${HOME}/Sites/wowchemy-academic
 DEST=${HOME}/mnt/zeus/nishii/public_html/hugo
 
 hugo -s ${SOURCE}\

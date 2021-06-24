@@ -3,7 +3,9 @@
 SOURCE=${HOME}/Sites/wowchemy-academic
 DEST=${HOME}/mnt/zeus/jun/public_html/hugo
 
-hugo -s ${SOURCE}\
+HUGO=${HOME}/bin/hugo
+echo "using $HUGO"
+${HUGO} -s ${SOURCE}\
 	-b /~jun/ \
 	-d  ${DEST}\
 	--cleanDestinationDir
