@@ -3,7 +3,8 @@
 SOURCE=${HOME}/Sites/wowchemy-academic
 DEST=${HOME}/mnt/zeus/jun/public_html/hugo
 
-HUGO=${HOME}/bin/hugo
+#HUGO=${HOME}/bin/hugo
+HUGO=hugo
 echo "using $HUGO"
 ${HUGO} -s ${SOURCE}\
 	-b /~jun/ \
