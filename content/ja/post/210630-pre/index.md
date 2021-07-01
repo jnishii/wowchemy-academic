@@ -12,14 +12,15 @@ tags: ["misc"]
 <!--more-->
 
 ### 2020年度
+
+人の動きに効果音をつける
+{{<youtube "5flWH-Zhzgc">}}
+
 スタートからゴールまでの最短距離を見つけるロボットを作る！
 {{<youtube "yyjsrhGYSKk">}}
 
 強化学習を使い囚人のジレンマゲームで戦略を学習させる
 {{<youtube "7WszJ46ib0Q">}}
-
-人の動きに効果音をつける
-{{<youtube "5flWH-Zhzgc">}}
 
 
 

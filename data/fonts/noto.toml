@@ -2,7 +2,8 @@
 name = "noto"
 
 # Optional Google font URL
-google_fonts = "Montserrat:300,600|Noto+Sans+JP:500,400,700|Roboto+Mono"
+google_fonts = "family=Montserrat:wght@300;600&family=Roboto+Mono&family=Noto+Sans+JP:wght@500;400,700"
+
 
 # Font families
 heading_font = "Montserrat"
