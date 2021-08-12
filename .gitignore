@@ -1,6 +1,8 @@
 .DS_Store
+assets/jsconfig.json
 public/
 .idea/
 resources/
-assets/
+assets/jsconfig.json
+go.*
 *~
