@@ -5,8 +5,7 @@ categories: ["research"]
 tags: ["python"]
 ---
 
-OECDのサイトに[各国の平均年収のデータ](https://stats.oecd.org/Index.aspx?DataSetCode=RMW)があったのでグラフにしてみた。
-
+OECDのサイトに[各国の平均年収のデータ](https://stats.oecd.org/Index.aspx?DataSetCode=RMW)があったのでPythonでグラフにしてみた。
 
 ## ライブラリとデータの読み込み
 
@@ -373,5 +372,7 @@ plot_change(dot_cpncu,ylabel="current wage increase")
     
 ![png](output_13_0.png)
 
-日本は，なんだか座標軸のように横に伸びている。
-もう少し上むいてくれるといいなぁ。
+日本は座標軸のように横に伸びている。
+外資系の企業から給料をもらって，日本で暮らすというのがお得かもしれない。
+IT系だったらリモーワーク可のところも増えているみたいだしね。
+
