@@ -7,6 +7,8 @@ tags: ["python"]
 
 OECDのサイトに[各国の平均年収のデータ](https://stats.oecd.org/Index.aspx?DataSetCode=RMW)があったのでPythonでグラフにしてみた。
 
+<!--more-->
+
 ## ライブラリとデータの読み込み
 
 
