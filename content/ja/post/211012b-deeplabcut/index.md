@@ -8,6 +8,8 @@ tags: ["python", "datascience"]
 ビデオ画像をもとに，マーカレス・モーションキャプチャを実現できる[DeepLabCut (DLC)](http://www.mackenziemathislab.org/deeplabcut)。
 世界中で使われているが，さらに開発も進んでいて複数台カメラ対応やリアルタイム処理もできるらしい。
 
+<!--more-->
+
 ドキュメントもよく整備されているが，どれを見たらよいかわからなくなるのでメモ書きを少し。
 
 - [Documentation Overview](https://github.com/DeepLabCut/DeepLabCut/blob/master/docs/UseOverviewGuide.md)
