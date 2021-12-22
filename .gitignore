@@ -6,3 +6,4 @@ resources/
 assets/jsconfig.json
 go.*
 *~
+.hugo_build.lock
