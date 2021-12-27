@@ -1,6 +1,6 @@
 ---
 title: "インベンション1番"
-date: 2021-12-12
+date: 2021-12-22
 categories: ["comp"]
 tags: ["music","research"]
 # Featured image
