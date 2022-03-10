@@ -37,6 +37,7 @@ enableRobotsTXT = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 disableAliases = true  # Disable aliases when `redirects` is added to the `outputs` below.
+abstract_length=135
 
 [permalinks]
   # If only creating events which are talks, we can optimize event URLs for talks.
@@ -103,3 +104,48 @@ disableAliases = true  # Disable aliases when `redirects` is added to the `outpu
     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5"
   [[module.imports]]
     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5"
+
+
+############################
+# Configuration of publication pages.
+[publications]
+  # Date format (refer to https://wowchemy.com/docs/customization/#date-format )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "January 2006"
+
+  # Citation style ("apa" or "mla")
+  citation_style = "apa"
+
+  # Configuration of project pages.
+  
+[projects]
+  # Views for associated content.
+  #   1: List
+  #   2: Compact
+  #   3: Card
+  #   4: Citation (publications only)
+  post_view = 2
+  publication_view = 2
+  talk_view = 2
+
+# Breadcrumb navigation
+[breadcrumb]
+  page_types = {book = true}
+
+############################
+
+############################
+## Security
+############################
+[security]
+  enableInlineShortcodes = true
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_', '^WC_']
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']

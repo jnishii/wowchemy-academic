@@ -14,14 +14,22 @@
     {{ warnf "Add the `/home/index.md` homepage file to each language's content folder. For example, your site should have a `content/home/` folder containing `index.md` and your homepage sections, or for multi-language sites, `content/en/home/` and `content/zh/home/` etc. Refer to the 'Build Your Homepage' and 'Language' documentation at https://wowchemy.com/docs/ and the example homepage at https://github.com/wowchemy/starter-academic/tree/master/exampleSite/content/home/index.md ." }}
   {{ end }}
 {{ else }}
-  {{ $page = .File.Path }}
+{{/*  {{ $page = .File.Path }}*/}}
+  {{ $page := "" }}
+  {{ with .File }}
+	  {{ $page = .Path }}
+  {{ else }}
+	  {{ $page = .Path }}
+  {{ end }}
+
+
   {{ $headless_bundle = site.GetPage $page }}
   {{/* Check widget page exists. */}}
   {{ if not $headless_bundle }}
     {{ warnf "Hugo cannot find a Widget Page at %s!" $page }}
     {{ warnf "If the page exists, Hugo Server may need restarting due to file changes." }}
     {{ warnf "View the Widget Page documentation at https://wowchemy.com/docs/managing-content/#create-a-widget-page ." }}
-    {{ warnf "If the Hugo version is between 0.65 and 0.68, it may be a confirmed Hugo bug that is expected to be fixed in Hugo v0.69: https://github.com/wowchemy/wowchemy-hugo-themes/issues/1595#issuecomment-605514973 ." }}
+    {{ warnf "If the Hugo version is between 0.65 and 0.68, it may be a confirmed Hugo bug that is expected to be fixed in Hugo v0.69: https://github.com/wowchemy/wowchemy-hugo-modules/issues/1595#issuecomment-605514973 ." }}
   {{ end }}
 {{ end }}
 
@@ -37,24 +45,13 @@
   {{ end }}
 
   {{ if and $bg.gradient_start $bg.gradient_end }}
-    {{ $angle := string $bg.gradient_angle | default "90" }}
-    {{ $style_bg = printf "%sbackground-image: linear-gradient(%sdeg, %s, %s);" $style_bg $angle $bg.gradient_start $bg.gradient_end }}
-  {{ end }}
-
-  {{ $bg_video := "" }}
-  {{ if $bg.video.path }}
-    {{ $bg_video = resources.Get (printf "media/%s" $bg.video.path) }}
-  {{ end }}
-  {{ $bg_video_class := "" }}
-  {{ if $bg.video.flip }}
-    {{ $bg_video_class = "flip" }}
+    {{ $style_bg = printf "%sbackground-image: linear-gradient(%s, %s);" $style_bg $bg.gradient_start $bg.gradient_end }}
   {{ end }}
 
   {{ if $bg.image }}
     {{/* See Hugo note on linking assets in styles: https://github.com/gohugoio/hugoThemes#common-permalink-issues */}}
     {{ $bg_img := resources.Get (printf "media/%s" $bg.image) }}
     {{ if $bg_img }}
-      {{ $bg_img = $bg_img.Fit "1920x1920 webp" }}
       {{ $style_bg = printf "%sbackground-image: url('%s');" $style_bg $bg_img.Permalink }}
     {{ else }}
       {{ errorf "Couldn't find `%s` in the `assets/media/` folder - please add it." $bg.image }}
@@ -84,12 +81,12 @@
     {{ $style = print $style $style_clip_path }}
   {{ end }}
 
-  {{ with ($st.Params.design.css_style | default $st.Params.advanced.css_style) }}
+  {{ with $st.Params.advanced.css_style }}
     {{ $style = print $style . }}
   {{ end }}
 
   {{/* Fix Hugo's ContentBaseName returning wrong file base name when page section is within a bundle. */}}
-  {{ $hash_id := replace $st.File.ContentBaseName "index" (path.Base .File.Dir) }}
+  {{ $hash_id := replace $st.File.ContentBaseName "index" (path.Base (path.Split .Path).Dir) }}
 
   {{ $widget := or $st.Params.widget "blank" }}
   {{ if eq $widget "custom" }}{{ $widget = "blank" }}{{ end }}{{/* Support legacy Custom widget */}}
@@ -97,14 +94,14 @@
 
   {{ $widget_path := printf "widgets/%s.html" $widget }}
   {{ $widget_args := dict "root" $ "page" $st "hash_id" $hash_id }}
-  {{ $css_classes := $st.Params.design.css_class | default $st.Params.advanced.css_class | default "" }}
+  {{ $css_classes := $st.Params.advanced.css_class | default "" }}
   {{ $extra_attributes := "" }}
   {{ $use_container := true }}
 
   {{/* Special case: Slider widget. */}}
   {{ if in (slice "slider") $widget }}
     {{ $css_classes = print $css_classes " carousel slide" }}
-    {{ $extra_attributes = printf "data-ride=\"carousel\" data-interval=\"%s\"" (cond ($st.Params.design.loop | default true) (string $st.Params.design.interval | default "3000") "false") }}
+    {{ $extra_attributes = printf "data-ride=\"carousel\" data-interval=\"%s\"" (string $st.Params.interval | default "5000") }}
     {{ $use_container = false }}
   {{ end }}
 
@@ -117,13 +114,11 @@
   {{end}}
 
   {{ $columns := $st.Params.design.columns | default "2" }}
-  {{ $use_cols := in (slice "pages" "featured" "experience" "accomplishments" "contact" "blank" "tag_cloud" "portfolio") $widget }}
+  {{ $use_cols := in (slice "pages" "featured" "experience" "accomplishments" "contact" "blank" "tag_cloud" "cat_tag_cloud" "portfolio") $widget }}
 
   {{/* Dedicated child div for bg prevents parallax 100% height issue within new CSS grid page wrapper. */}}
   <section id="{{$hash_id}}" class="home-section {{$widget_class}} {{if $bg.text_color_light}}dark{{else if (eq $bg.text_color_light false)}}light{{end}} {{with $css_classes}}{{.}}{{end}}" {{with $style}}style="{{. | safeCSS}}"{{end}} {{print $extra_attributes | safeHTMLAttr}}>
-   <div class="home-section-bg {{if $bg.image}} bg-image{{if ($bg.image_parallax | default true) }} parallax{{end}}{{end}}" {{with $style_bg}}style="{{. | safeCSS}}"{{end}}>
-     {{with $bg_video}}<video class="bg-video {{$bg_video_class}}" playsinline="" preload="auto" loop="" muted autoplay="" tabindex="-1" width="100%" height="100%" src="{{.RelPermalink}}" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;"></video>{{end}}
-   </div>
+   <div class="home-section-bg {{if $bg.image}} bg-image{{if ($bg.image_parallax | default true) }} parallax{{end}}{{end}}" {{with $style_bg}}style="{{. | safeCSS}}"{{end}}></div>
     {{if $use_container}}<div class="container">{{end}}
 
     {{if $use_cols}}

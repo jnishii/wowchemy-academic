@@ -1,18 +1,17 @@
-{{ $taxonomy := "categories" }}
-
-{{ if .Param $taxonomy }}
-  <span class="middot-divider"></span>
-  <i class="fas fa-folder mr-1"></i>
-  {{ range $index, $value := (.GetTerms $taxonomy) }}
-  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+{{ $cat_taxonomy := "categories" }}
+{{ if .Param $cat_taxonomy }}
+<div class="article-tags">
+  {{ range $index, $value := (.GetTerms $cat_taxonomy) }}
+  <a class="badge badge-light" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
   {{ end }}
-{{ end }}
 
-{{ $taxonomy := "tags" }}
-{{ if .Param $taxonomy }}
-  {{ range $index, $value := (.GetTerms $taxonomy) }}
-  <span class="middot-divider"></span>
-  <i class="far fa-folder"></i>
-  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  {{ $taxonomy := "tags" }}
+  {{ if .Param $taxonomy }}
+<!--  <div class="article-tags">-->
+    {{ range $index, $value := (.GetTerms $taxonomy) }}
+    <a class="badge badge-light" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+<!----  </div>-->
   {{ end }}
+</div>
 {{ end }}

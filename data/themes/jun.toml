@@ -1,21 +1,20 @@
 # Theme metadata
-name = "jun"
+name = "Jun"
 
-# Is theme light or dark?
-light = true
+[light]
+  # Primary
+  primary = "#3f51b5"
+  #primary_light = "#757de8"
 
-# Primary
-primary = "#3f51b5"
-#primary_light = "#757de8"
-#primary_dark = "#002984"
+  # Menu
+  menu_primary = "#4052B5"
+  menu_text = "#fff"
+  menu_text_active = "#9caeff"
+  menu_title = "#fff"
 
-# Menu
-#menu_primary = "#2a5ca9"
-menu_primary = "#4052B5"
-menu_text = "#ffffff"
-menu_text_active = "#9caeff"
-menu_title = "#ffffff"
+  # Backgrounds
+  #background = "#EAE7D6"
+  background = "#fff"
+  home_section_odd = "rgb(255, 255, 255)"
+  home_section_even = "rgb(247, 247, 247)"
 
-# Home sections
-home_section_odd = "rgb(255, 255, 255)"
-home_section_even = "rgb(247, 247, 247)"

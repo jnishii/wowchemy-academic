@@ -14,7 +14,8 @@
 #   Browse the latest built-in font sets at https://github.com/wowchemy/wowchemy-hugo-modules/tree/master/wowchemy/themes/
 #   Browse user installed themes in `data/themes/`
 #theme = "Ocean"
-theme = "jun"
+theme_day = "jun"
+theme_night = "jun"
 
 # Enable users to switch between day and night mode?
 #day_night = true

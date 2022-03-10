@@ -1,7 +1,7 @@
 {{ partial "page_edit" . }}
 {{ partial "tags" . }}
-{{ partial "share" . }}
-<!-- {{ partial "page_author" . }} --><!--jun-->
+{{ partial "components/page_sharer" . }}
+<!--{{ partial "page_author" . }}--><!--jun-->
 {{ partial "comments" . }}
 
 {{ if site.Params.section_pager }}

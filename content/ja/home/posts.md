@@ -1,25 +1,16 @@
 ---
-# An instance of the Pages widget.
-# Documentation: https://wowchemy.com/docs/page-builder/
 widget: pages
-
-# This file represents a page section.
 headless: true
-
-# Order that this section appears on the page.
 weight: 20
 
 title: news
 subtitle:
 
 content:
-  # Page type to display. E.g. post, talk, publicati1on...
-  page_type: post 
-  # Choose how many pages you would like to display (0 = all pages)
-  count: 3
   # Filter on criteria
   filters:
-    author: ""
+    folders:
+      - post
     category: ""
     tag: ""
     exclude_featured: false
@@ -27,18 +18,19 @@ content:
     exclude_past: false
     publication_type: ""
   # Choose how many pages you would like to offset by
+  
+  # Page type to display. E.g. post, talk, publicati1on...
+  page_type: post 
+  count: 3
   offset: 0
-  # Page order: descending (desc) or ascending (asc) date.
   order: desc
 
 design:
-  # Choose how many columns the section has. Valid values: 1 or 2.
   columns : "2"
-
-  # Choose a view for the listings:
-  #   1 = List
-  #   2 = Compact
-  #   3 = Card
-  #   4 = Citation (publication only)
-  view: 3
+  # Choose from list, card, citation, showcase, compact
+  #   1 : list
+  #   2 : compact
+  #   3 : card
+  #   4 : citation (publication only)
+  view: compact
 ---

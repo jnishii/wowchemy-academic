@@ -15,7 +15,7 @@
 
   {{ if not (in (slice "event" "page") $page.Type) }}
   <span class="article-date">
-    {{ $date := $page.Lastmod.Format site.Params.date_format }}
+    {{ $date := $page.Lastmod.Format site.Params.locale.date_format }}
     {{ if eq $page.Type "publication" }}
       {{ $date = $page.Date.Format (site.Params.publications.date_format | default "January, 2006") }}
     {{ else }}
@@ -54,20 +54,6 @@
     <span class="middot-divider"></span>
     <a href="{{ $page.RelPermalink }}#disqus_thread"><!-- Count will be inserted here --></a>
   {{ end}}
-
-<!--
-  {{ $taxonomy := "categories" }}
-  {{ if $page.Param $taxonomy }}
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i>
-    {{- range $index, $value := ($page.GetTerms $taxonomy) -}}
-      {{- if gt $index 0 }}, {{ end -}}
-      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-    {{- end -}}
-  </span>
-  {{ end }}
--->
 
   {{ partial "tags.html" $page }} <!--jun-->
 </div>
