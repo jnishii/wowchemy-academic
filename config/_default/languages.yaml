@@ -1,0 +1,36 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://wowchemy.com/docs/guide/language/
+
+# Default language
+ja:
+  languageCode: ja-JP
+  contentDir: content/ja
+
+  locale:
+    date_format: 'Jan 2, 2006'
+    time_format: '3:04 PM'
+    address_format: ja-JP
+  
+en:
+  languageCode: en-us
+  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  contentDir: content/en
+
+  locale:
+    date_format: 'Jan 2, 2006'
+    time_format: '3:04 PM'
+    address_format: en-us
+
+# Uncomment the lines below to configure your website in a second language.
+#zh:
+#  languageCode: zh-Hans
+#  contentDir: content/zh
+#  title: Chinese website title...
+#  params:
+#    description: Site description in Chinese...
+#  menu:
+#    main:
+#      - name: 传
+#        url: '#about'
+#        weight: 1
