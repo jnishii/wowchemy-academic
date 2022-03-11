@@ -93,7 +93,7 @@ features:
       index_name: ''
       show_logo: false
   map:
-    provider: ''
+    provider: 'google'
     api_key: ''
     zoom: 15
 
@@ -109,39 +109,6 @@ extensions:
   academicons:
     enable: true
 
-
-############################
-## Contact details
-##
-## These details power the Contact widget (if enabled).
-## Additionally, for organizations, these details may be used to enrich search engine results.
-############################
-
-# Enter contact details (optional). To hide a field, clear it to "".
-email : "nishii [at] yamaguchi-u.ac.jp"
-phone : ""
-coordinates :
-  latitude : "34.1470"
-  longitude : "131.4713"
-
-address :
-  street: "1677-1"
-  city: "Yamaguchi"
-  region: "Yamaguchi"
-  postcode: "753-8512"
-  country: "Japan"
-  country_code: "JP"
-
-room : "山口大学吉田キャンパス総合研究棟３０３号室"
-room_url : "http://bcl.sci.yamaguchi-u.ac.jp/access"
-
-# Geographic coordinates
-coordinates :
-  latitude : "34.1470"
-  longitude : "131.4713"
-
-# Directions for visitors to locate you.
-directions : "Yoshida Research and Education Building 303"
 
 # blog header
 reading_time: false
