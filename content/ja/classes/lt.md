@@ -3,7 +3,7 @@ title: ロジカルシンキング
 weight: 30
 ---
 
-## 2021年度の案内
+## 2022年度の案内
 
 上手に自分の意見を主張したり，相手の意見に反論したりできるようになるための技術を**楽しく**お勉強します。
 
@@ -19,4 +19,4 @@ weight: 30
 
 e-learningのコーナーに毎週の宿題や様々な情報を掲載しています。以下からログインしてください。
 
-- [ロジカルシンキングのe-learning](https://mdcs4s.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=50910&noprocess)
+- [ロジカルシンキングのe-learning](https://mdcs5.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=53392&noprocess)

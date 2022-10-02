@@ -3,7 +3,7 @@ title: 計算モデル論II
 weight: 40
 ---
 
-## 2021年度の案内
+## 2022年度の案内
 
 計算モデル論IIは川村先生と西井が担当します。
 
@@ -21,6 +21,6 @@ weight: 40
 
 講義資料と宿題が以下のe-learningコーナーにあります。
 
-- [e-learningコーナー 「2021 計算モデル論II」](https://mdcs4s.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=50914&noprocess)
+- [e-learningコーナー 「2022 計算モデル論II」](https://mdcs5.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=53396&noprocess)
 	- 上記ページに入るときに登録キーの入力を求められることがあります。講義で説明します。
 	- 毎週の講義後に**宿題**が出ます。〆切をよく確認して忘れずにしましょう。

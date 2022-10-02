@@ -1,5 +1,5 @@
 ---
-title: 運動計測チーム
+title: 運動解析チーム
 summary: データサイエンスで運動のコツを明らかにする
 categories:
 - research

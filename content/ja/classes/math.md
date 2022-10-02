@@ -3,7 +3,7 @@ title: 物理と情報のための基礎数学II
 weight: 10
 ---
 
-## 2021年度の案内
+## 2022年度の案内
 
 - 数学の基礎を**楽しくお勉強**する授業です。 
 - 本講義は前期の**第一クォータ開講**です。
@@ -28,8 +28,8 @@ weight: 10
 下記のe-learning教材が宿題です。
 
 - 以下のリンクからe-learningサイトにログインしてください。
-    - [基礎数学IIのe-learningコーナー](https://mdcs5.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=50322&noprocess)
-    - 上記サイトのトップページからは「就学支援/2021/前期/理学部/2021物理と情報のための基礎数学II」とたどって下さい。
+    - [基礎数学IIのe-learningコーナー](https://mdcs5.cc.yamaguchi-u.ac.jp/moodle/course/view.php?id=53391&noprocess)
+    - 上記サイトのトップページからは「就学支援/2022/前期/理学部/2022物理と情報のための基礎数学II」とたどって下さい。
 -  ログイン名とパスワードは大学の計算機アカウントと同じです。
 
 ### 宿題の内容

@@ -45,6 +45,12 @@
 
 [[main]]
   parent ="classes"
+  name = "データサイエンス技術II"
+  url = "classes/#ds"
+
+
+[[main]]
+  parent ="classes"
   name = "計算モデル論II"
   url = "classes/#cm"
 
