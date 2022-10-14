@@ -5,8 +5,7 @@ categories: ["research"]
 tags: ["math"]
 ---
 
-先日のblogに載せた[Santa Fe Insitute](https://www.santafe.edu/)の[力学系のオンラインコース](https://www.complexit
-yexplorer.org/courses)の講義では「数理モデル」の役割の説明にも時間を割いていたが，そこで以下の論文を紹介していた。
+先日のblogに載せた[Santa Fe Insitute](https://www.santafe.edu/)の[力学系のオンラインコース](https://www.complexityexplorer.org/courses)の講義では「数理モデル」の役割の説明にも時間を割いていたが，そこで以下の論文を紹介していた。
 
 - [Joshua M. Epstein (2008) "Why Model? Journal of Artificial Societies and Social Simulation" vol. 11, no. 4(12)](http://jasss.soc.surrey.ac.uk/11/4/12.html)
 

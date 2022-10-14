@@ -12,7 +12,7 @@ ${HUGO} -s ${SOURCE}\
 	--cleanDestinationDir
 
 echo "(cd ${DEST}; ln -sf ../custom/download .)"
-(cd ${DEST}; ln -sf ../custom/download .)
+(cd ${DEST}; ln -sf ../download .)
 
 cat << EOF > ${DEST}/.htaccess
 ErrorDocument 404 /~jun/404.html
