@@ -5,9 +5,12 @@ DEST=${HOME}/mnt/web/nishii@ds0n/public_html/hugo
 
 #HUGO=${HOME}/bin/hugo
 HUGO=hugo
+#baseurl=/~jun/
+baseurl=/~jun/hugo/
+
 echo "using $HUGO"
 ${HUGO} -s ${SOURCE}\
-	-b /~nishii/hugo \
+	-b /~jun/ \
 	-d  ${DEST} 
 	#--cleanDestinationDir#
 
