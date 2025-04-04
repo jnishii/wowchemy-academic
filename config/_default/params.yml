@@ -20,9 +20,9 @@ marketing:
     org_name: ''
     description: ''
     twitter: ''
-  analytics:
-    google_analytics: 'UA-48444845-1'
-    baidu_tongji: ''
+#  analytics:
+#    google_analytics: 'UA-48444845-1'
+#    baidu_tongji: ''
   verification:
     google: ''
     baidu: ''

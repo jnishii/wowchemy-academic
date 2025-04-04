@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SOURCE=${HOME}/Sites/wowchemy-academic
-DEST=${HOME}/mnt/web/nishii@ds0n/public_html/hugo
+DEST=${HOME}/mnt/web/public_html/hugo
 
 #HUGO=${HOME}/bin/hugo
 HUGO=hugo

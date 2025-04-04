@@ -21,13 +21,6 @@ subtitle = ""
   name = "物理と情報のための基礎数学II"
   url = "#math"
 #  description = "100%"  
-  
-[[feature]]
-  icon = "users"
-  icon_pack = "fas"
-  name = "基礎セミナー"
-  link = "#bs"
-#  description = "90%"
 
 [[feature]]
   icon = "lightbulb"
@@ -35,20 +28,29 @@ subtitle = ""
   name = "ロジカルシンキング"
   link = "#lt"
 #  description = "10%"
+  
+[[feature]]
+  icon = "chart-simple"
+  icon_pack = "fas"
+  name = "データサイエンス技術II"
+  link = "#ds"
+#  description = "90%"
+
+  
+[[feature]]
+  icon = "python"
+  icon_pack = "fas"
+  name = "データサイエンスプログラミング"
+  link = "#dp"
+#  description = "90%"
 
 [[feature]]
   icon = "desktop"
   icon_pack = "fas"
-  name = "計算モデル論II"
-  link = "#cm"  
+  name = "機械学習"
+  link = "#ml"  
 #  description = "10%"
 
-[[feature]]
-  icon = "laptop"
-  icon_pack = "fas"
-  name = "計算モデル論演習II"
-  link = "#gym"  
-#  description = "10%"
 
 [[feature]]
   icon = "flask"

@@ -35,11 +35,6 @@
 
 [[main]]
   parent ="classes"
-  name = "基礎セミナー"
-  url = "classes/#bs"
-
-[[main]]
-  parent ="classes"
   name = "ロジカルシンキング"
   url = "classes/#lt"
 
@@ -48,21 +43,20 @@
   name = "データサイエンス技術II"
   url = "classes/#ds"
 
+[[main]]
+  parent ="classes"
+  name = "データサイエンスプログラミング"
+  url = "classes/#dp"
 
 [[main]]
   parent ="classes"
-  name = "計算モデル論II"
-  url = "classes/#cm"
+  name = "機械学習"
+  url = "classes/#ml"
 
 [[main]]
   parent ="classes"
-  name = "計算モデル論演習II"
-  url = "classes/#gym"
-
-[[main]]
-  parent ="classes"
-  name = "自然情報科学"
-  url = "classes/#dynamicalsystem"
+  name = "自然情報科学特論"
+  url = "classes/#ns"
 
 #######
 [[main]]
